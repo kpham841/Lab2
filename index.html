@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meeting Notes</title>
+    <meta name="description" content="Meeting notes page for CSE 110 Lab 2">
+    <meta name="author" content="Khiem Pham">
+
+    <link rel="icon" href="./media/favicon.ico">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Meeting #2: Creating an app</h1>
+    </header>
+
+    <nav>
+        <ol>
+            <li>
+                <a href="#attendance">Attendance</a>
+            </li>
+            <li>
+                <a href="#agenda">Agenda</a>
+            </li>
+            <li>
+                <a href="#unfinished-business">Unfinished Business</a>
+            </li>
+            <li>
+                <a href="#new-business">New Business</a>
+            </li>
+            <li>
+                <a href="#comments">Comments/Questions/Concerns</a>
+            </li>
+            <li>
+                <a href="#media">Media</a>
+            </li>
+        </ol>
+    </nav>
+
+    <main>
+        <div id="main-content">
+            <h2><strong>Choosing the <i>framework</i> for the frontend of our app.</strong></h2>
+
+            <h3><em>October 2, 2021</em></h3>
+
+            <hr>
+
+            <section id="attendance">
+                <h2><b>Attendance</b></h2>
+                <ul>
+                    <li>Tyler Fox</li>
+                    <li>Anita Sargent</li>
+                    <li>Ayrton Blackwell</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="agenda">
+                <h2><b>Agenda</b></h2>
+                <p>To decide on the frontend framework for our app</p>
+            </section>
+
+            <hr>
+
+            <section id="unfinished-business">
+                <h2><b>Unfinished Business from last meeting</b></h2>
+                <p>How are we going to split up the work?</p>
+            </section>
+
+            <hr>
+
+            <section id="new-business">
+                <h2><b>New Business</b></h2>
+                <p>Deciding what frontend framework to use.</p>
+            </section>
+
+            <hr>
+
+            <section id="notes">
+                <h2><b>Notes</b></h2>
+                <p>We're using ReactJS for the frontend since it's easy to reuse components.</p>
+            </section>
+
+            <hr>
+
+            <section id="comments">
+                <h2><b>Miscellaneous Comments / Questions / Concerns</b></h2>
+                <p>What should we use for the backend: <span>Django or Flask?</span></p>
+            </section>
+
+            <section id="media">
+                <img src="https://www.researchgate.net/profile/Sherif-Abdelmohsen/publication/336641242/figure/fig1/AS:815536913002497@1571450560192/Technology-stack-diagram-of-the-proposed-S2S-school-management-system.png"
+                    alt="Tech Stack">
+
+                <br>
+                <br>
+
+                <video width="320" height="240" controls>
+                    <source src="./media/staring_dude.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <br>
+                <br>
+
+                <audio controls>
+                    <source src="./media/banana_split_switches.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </section>
+
+            <br>
+
+            <details>
+                <summary>Fun fact</summary>
+                JavaScript was originally called Mocha!
+            </details>
+
+
+            <form id="user-form">
+                <fieldset>
+                    <!-- TEXT-->
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name">
+
+                    <br>
+                    <br>
+
+                    <!-- RADIO -->
+                    <label for="one">One</label>
+                    <input type="radio" id="one" name="one" value="one">
+
+                    <br>
+                    <br>
+
+                    <!-- CHECKBOX -->
+                    <label for="two">Two</label>
+                    <input type="checkbox" id="two" name="two" value="two">
+
+                    <br>
+                    <br>
+
+                    <!-- DATE -->
+                    <label for="start">Start Date:</label>
+                    <br>
+                    <input type="date" id="start" name="start-date" value="2021-10-2" min="2021-01-01" max="2021-12-31">
+
+                    <br>
+                    <br>
+
+                    <!-- TEXTAREA -->
+                    <textarea rows="4" cols="50" name="comment" form="user-form">Enter text here...</textarea>
+
+                    <br>
+                    <br>
+
+                    <!-- DATALIST -->
+                    <label for="fav-language">Favorite programming language:</label>
+                    <input list="languages" id="fav-language" name="fav-language" />
+
+                    <datalist id="languages">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="C">
+                        <option value="C++">
+                        <option value="Java">
+                        <option value="Assembly">
+                    </datalist>
+
+                    <br>
+                    <br>
+
+                    <!-- SELECT -->
+                    <label for="food">Favorite food:</label>
+                    <select id="food" name="foodlist" form="user-form">
+                        <option value="pizza">Pizza</option>
+                        <option value="ramen">Ramen</option>
+                        <option value="sushi">Sushi</option>
+                        <option value="bean">Bean</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" form="user-form" value="Submit">Submit</button>
+                </fieldset>
+            </form>
+
+
+        </div>
+    </main>
+
+    <br>
+
+    <footer>
+        <center>Made with ❤️ for CSE 110 Lab 2</center>
+    </footer>
+</body>
+
+</html>
